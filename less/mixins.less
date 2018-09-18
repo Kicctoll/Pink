@@ -1,0 +1,22 @@
+.flex(@flex-flow: row wrap, @justify-content: flex-start, @align-items: stretch) {
+  display: flex;
+  flex-flow: @flex-flow;
+  justify-content: @justify-content;
+  align-items: @align-items;
+}
+
+.flex-child(@flex: 0 1 auto) {
+  flex: @flex;
+}
+
+.font(@font-size: 18px, @font-weight: 400) {
+  font-size: @font-size;
+  font-weight: @font-weight;
+}
+
+.absAlign(@top: 0, @left: 0, @right: 0, @bottom: 0) {
+  top: @top;
+  left: @left;
+  right: @right;
+  bottom: @bottom;
+}

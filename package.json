@@ -1,0 +1,10 @@
+{
+    "name": "Pink",
+    "version": "1.0.0",
+    "description": "It is website about app which is simplifies your life",
+    "devDependencies": {
+        "grunt": "^1.0.3",
+        "grunt-contrib-less": "^2.0.0",
+        "grunt-contrib-watch": "^1.1.0"
+    }
+}

@@ -1,0 +1,61 @@
+.userInfoAchievements {
+  width: 100%;
+  padding: 9px 6.17% 55px;
+  margin-top: 65px;
+  .flex(row wrap, space-between);
+
+  .title {
+    width: 436px;
+  }
+
+  .form-group {
+    position: relative;
+    margin-top: 43px;
+    .flex(row nowrap, flex-start, center);
+
+    label {
+      color: #283645;
+      margin-left: 21px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .userInfoAchievements {
+    .flex(column nowrap);
+
+    .form-group {
+      width: 100%;
+
+      span {
+        background-color: #ffffff;
+      }
+
+      label {
+        margin-left: 10px !important;
+      }
+    }
+
+    .form-group:nth-child(2) {
+      margin-top: 68px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .userInfoAchievements {
+    width: 100% !important;
+    border: 0 !important;
+    background-color: #f2f2f2;
+
+    .title {
+      width: 220px;
+      background-color: transparent !important;
+      top: 39px !important;
+    }
+
+    .form-group:nth-child(2) {
+      margin-top: 102px;
+    }
+  }
+}

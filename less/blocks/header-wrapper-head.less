@@ -1,0 +1,29 @@
+.header-wrapper-head {
+  .container {
+    min-height: 284px;
+    .flex(row nowrap, center, center);
+    p {
+      text-align: center;
+      .font(50px, 300);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-wrapper-head {
+    .container {
+      min-height: 330px;
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .header-wrapper-head {
+    .container {
+      min-height: 171px;
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+}

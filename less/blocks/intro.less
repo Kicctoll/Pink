@@ -1,0 +1,44 @@
+.b-intro {
+  .container {
+    min-height: 240px;
+    .flex(row nowrap, center, center);
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      max-width: 568px;
+      color: #283645;
+      text-align: center;
+    }
+  }
+}
+
+.b-intro-form {
+  .container {
+    p {
+      max-width: initial;
+      padding: 0 8.3%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .b-intro {
+    .container {
+      min-height: 228px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .b-intro {
+    .container {
+      min-height: 184px;
+
+      p {
+        font-size: 14px;
+        padding: 0;
+      }
+    }
+  }
+}

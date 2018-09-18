@@ -1,0 +1,61 @@
+.userInfoApp {
+  .flex(column nowrap);
+  width: 46.2%;
+  padding-bottom: 45px;
+
+  .title {
+    width: 368px !important;
+  }
+
+  .form-group {
+    .flex(row nowrap, flex-start, center);
+    position: relative;
+    padding-left: 17.9%;
+
+    label {
+      color: #283645;
+    }
+    .replacedRadio {
+      margin-right: 22px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 55px !important;
+    }
+
+    &:nth-child(n + 3) {
+      margin-top: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .userInfoApp {
+    width: 100%;
+
+    .form-group {
+      padding-left: 8.28%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .userInfoApp {
+    order: 3;
+    width: 100% !important;
+    background-color: #f2f2f2;
+    border: 0 !important;
+
+    .title {
+      background-color: transparent !important;
+      width: 180px !important;
+      top: 40px !important;
+    }
+
+    .form-group {
+      &:nth-child(2) {
+        margin-top: 107px !important;
+      }
+    }
+  }
+}

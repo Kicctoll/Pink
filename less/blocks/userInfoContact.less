@@ -1,0 +1,81 @@
+.userInfoContact {
+  width: 100%;
+  padding: 42px 6.17% 20px;
+  margin-top: 65px;
+  .flex(row nowrap, space-between);
+
+  .form-group {
+    .flex(column nowrap);
+    width: 39.89%;
+
+    .form-group-input {
+      position: relative;
+      input {
+        width: 100%;
+      }
+
+      img {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+      }
+    }
+
+    label {
+      margin-top: 16px;
+      color: #d22856;
+      margin-left: 20px;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+
+  .title {
+    width: 260px !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .userInfoContact {
+    .flex(column nowrap);
+
+    .form-group {
+      width: 100%;
+    }
+
+    .form-group:nth-child(3) {
+      margin-top: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .userInfoContact {
+    order: 2;
+    border: 0 !important;
+    padding: 0 6.17% 0;
+    margin-top: 35px !important;
+
+    .title {
+      display: none;
+    }
+
+    .form-group {
+      .flex(column-reverse);
+
+      .form-group-input {
+        img {
+          display: none;
+        }
+      }
+
+      label {
+        margin: 0 0 15px 23px;
+      }
+
+      &:nth-child(3) {
+        margin-top: 25px;
+      }
+    }
+  }
+}

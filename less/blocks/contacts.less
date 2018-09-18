@@ -1,0 +1,110 @@
+.b-contacts {
+  .container {
+    padding-top: 50px;
+
+    .c-head {
+      span {
+        display: block;
+        .font(50px, 300);
+        color: #283645;
+        text-align: center;
+        line-height: 50px;
+      }
+
+      span:last-child {
+        margin-top: 5px;
+      }
+    }
+
+    .p-contact {
+      .flex(row wrap, space-around);
+      margin-top: 65px;
+    }
+
+    .p-contact-part {
+
+      p:first-child {
+        text-align: center;
+        .font(18px, bold);
+        color: #283645;
+      }
+
+      p:last-child {
+        .font(24px);
+        color: #d22856;
+        margin-top: 19px;
+      }
+
+      .maillink {
+        display: inline-block;
+        .font(24px);
+        color: #d22856;
+        margin-top: 15px;
+      }
+
+      .maillink:hover {
+        color: #283645;
+        border-bottom: 2px solid #283645;
+      }
+
+      .maillink:active {
+        color: #bec2c7;
+        border-bottom: transparent;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .b-contacts {
+    .container {
+      .c-head {
+        span {
+          font-size: 40px;
+        }
+      }
+
+      .p-contact {
+        margin-top: 35px;
+        .p-contact-part:nth-child(3) {
+          margin-top: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .b-contacts {
+    .container {
+      .c-head {
+        span {
+          font-size: 24px;
+          line-height: initial;
+
+          &:last-child {
+            margin-top: 0;
+          }
+        }
+      }
+
+      .p-contact {
+        margin-top: 0;
+
+        .p-contact-part {
+          p:last-child {
+            margin-top: 5px;
+          }
+
+          .maillink {
+            margin-top: 2px;
+          }
+        }
+
+        .p-contact-part {
+          margin-top: 20px !important;
+        }
+      }
+    }
+  }
+}

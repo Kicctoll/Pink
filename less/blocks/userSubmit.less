@@ -1,0 +1,43 @@
+.userSubmit {
+  width: 100%;
+  margin-top: 65px;
+  .flex(row nowrap, space-between, center);
+
+  button[type="submit"] {
+    width: 300px;
+    height: 63px;
+    outline: none;
+    border-radius: 3px;
+
+    background-color: #2aab6d;
+    text-transform: uppercase;
+    color: #ffffff;
+    .font(18px, bold);
+  }
+
+  button[type="submit"]:hover {
+    background-color: #1c9b5e;
+  }
+
+  button[type="submit"]:active {
+    color: #61b98f;
+  }
+
+  .require {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #283645;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .userSubmit {
+    order: 6;
+
+    .flex(column nowrap, flex-start, center);
+
+    .require {
+      margin-top: 40px;
+    }
+  }
+}

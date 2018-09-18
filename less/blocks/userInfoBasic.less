@@ -1,0 +1,44 @@
+.userInfoBasic {
+  width: 46.2%;
+
+  .form-group {
+    .flex(row nowrap, flex-start, center);
+
+    label {
+      margin-right: 20px;
+      color: #d22856;
+      .font(14px, normal);
+      text-transform: uppercase;
+    }
+
+    input {
+      flex-grow: 1;
+    }
+  }
+
+  .form-group:nth-child(n + 2) {
+    margin-top: 54px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .userInfoBasic {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .userInfoBasic {
+    .form-group {
+      .flex(column nowrap);
+
+      input {
+        margin-top: 14px;
+      }
+    }
+
+    .form-group:nth-child(n + 2) {
+      margin-top: 22px;
+    }
+  }
+}

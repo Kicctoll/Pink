@@ -1,0 +1,114 @@
+#download {
+  width: @width-100;
+  max-width: 1500px;
+  margin: 99px auto 0 auto;
+  padding: 0 10.7% 0;
+  min-height: 646px;
+  background: transparent url("../img/iphone-6-in-desktop.png") no-repeat right top;
+  position: relative;
+}
+
+.download-menu {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 300px;
+
+  .download-title {
+    .font(50px, 300);
+    text-align: center;
+    margin: 0;
+  }
+
+  .download-btn {
+    width: @width-100;
+    padding: 14px 30px 13px;
+    margin-top: 37px;
+    border: 3px solid #ffffff;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 18px;
+    color: #ffffff;
+
+    transition: background-color 0.3s;
+  }
+
+  .download-btn:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  .download-btn:active {
+    background-color: #ffffff;
+    color: #f1becc;
+  }
+
+  .download-links {
+    width: @width-100;
+    .flex(row wrap, space-evenly, center);
+    margin-top: 67px;
+  }
+
+  .download-links-info {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 55px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #download {
+    width: @width-100;
+    padding: 0 5.7% 0;
+    min-height: 545px;
+    background-image: url("../img/iphone-6-in-tablet.png");
+  }
+
+  .download-title {
+    font-size: 40px;
+  }
+
+  .download-links-info {
+    font-size: @font-size-18;
+  }
+
+  .download-menu {
+    .download-btn {
+      font-size: @font-size-18;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #download {
+    padding: 0 6.25% 0;
+    background: transparent url("../img/iphone-6-in-hand.png") no-repeat bottom center;
+    min-height: 314px;
+
+    .download-menu {
+      width: @width-100;
+      padding: 0 7% 35px;
+      position: absolute;
+      left: 0;
+      top: 286px;
+      background-color: #1d2631;
+
+      .download-title {
+        display: none;
+      }
+
+      .download-btn {
+        font-size: 15px;
+      }
+
+      .download-links {
+        margin-top: 32px;
+      }
+
+      .download-links-info {
+        font-size: 14px;
+        margin-top: 30px;
+      }
+    }
+  }
+}

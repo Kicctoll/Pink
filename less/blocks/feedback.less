@@ -1,0 +1,226 @@
+.b-feedback {
+  width: 100%;
+  .container {
+    width: 78.3%;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    padding: 0 0 45px 0;
+    .flex(column nowrap, flex-start, flex-start);
+    position: relative;
+
+    .fd-quotes {
+      margin: 72px auto 0 auto;
+    }
+
+    .fd-content {
+      color: #283645;
+      text-align: center;
+      line-height: 30px;
+      max-width: 680px;
+      margin: 55px auto 0 auto;
+    }
+
+    .fd-author {
+      margin-top: 40px;
+
+      .a-name {
+        color: #000000;
+        .font(24px, 800);
+      }
+
+      .a-birth {
+        color: #283645;
+        margin-top: 5px;
+      }
+
+      .a-name, .a-birth {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .arrow {
+      top: 53%;
+      position: absolute;
+      background-color: transparent;
+      outline: none;
+      border: 0;
+      .font(40px, 300);
+      color: #bec2c7;
+
+      i {
+        display: inline-block;
+        width: 29.6px;
+        height: 29.6px;
+        border-bottom: 3px solid #bec2c7;
+        border-left: 3px solid #bec2c7;
+
+        &:hover {
+          border-color: #7e868f;
+        }
+
+        &:active {
+          border-color: #e9ebec;
+        }
+      }
+
+      &:hover {
+        fill: #7e868f;
+      }
+
+      &.a-left {
+        left: 7px;
+        i {
+          transform: rotate(45deg);
+        }
+      }
+
+      &.a-right {
+        right: 7px;
+        i {
+          transform: rotate(-135deg);
+        }
+      }
+    }
+
+    .dots {
+      opacity: 0;
+      .flex(row nowrap);
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      margin: 0 auto 0 auto;
+      width: 87px;
+
+      .dot:not(:first-child) {
+        margin-left: 13px;
+      }
+
+      a {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border: 3px solid transparent;
+        border-radius: 50%;
+        background-color: #bec2c7;
+
+        &.active {
+          background-color: #ffffff;
+          border-color: #000000;
+        }
+
+        &:hover:not(.active) {
+          background-color: #7e868f;
+        }
+
+        &:active:not(.active) {
+          background-color: #e9ebec;
+        }
+      }
+    }
+  }
+
+  #contComments .slides li {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+   .b-feedback {
+     .container {
+       width: 95%;
+       max-width: 800px;
+     }
+
+     #contComments .slides li {
+       width: 800px;
+     }
+   }
+}
+
+@media screen and (max-width: 768px) {
+  .b-feedback {
+    .container {
+      padding-bottom: 70px;
+      max-width: 576px;
+
+      .fd-quotes {
+        display: none;
+      }
+
+      .fd-content {
+        margin-top: 0;
+      }
+
+      .fd-author {
+        .a-name {
+          .font(20px, 800);
+        }
+
+        .a-birth {
+          font-size: 14px;
+        }
+      }
+
+      .arrow {
+        display: none;
+      }
+
+      .dots {
+        opacity: 1;
+      }
+    }
+
+    #contComments .slides li {
+      width: 576px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .b-feedback {
+    .container {
+      .flex(column-reverse nowrap);
+      padding-bottom: 130px;
+      max-width: 400px;
+
+      .fd-content {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 25px;
+      }
+
+      .fd-author {
+        .a-birth {
+          display: none;
+        }
+      }
+
+      .dots {
+        bottom: 80px;
+      }
+    }
+
+    #contComments .slides li {
+      min-width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .b-feedback {
+    .container {
+      width: 100%;
+      max-width: initial;
+
+      .fd-content {
+        font-size: 13px;
+      }
+    }
+
+    #contComments .slides li {
+      min-width: 295px;
+    }
+  }
+}
